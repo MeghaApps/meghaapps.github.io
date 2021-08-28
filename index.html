@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Megha</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header 
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                    <img src="images/logo.png" alt="Homepage">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li class="current"><a class="smoothscroll" href="#home" title="intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#features" title="features">Team</a></li>
+                    <li><a class="smoothscroll" href="#download" title="download">Download</a></li>	
+                </ul>
+    
+                <div class="header-cta">
+                    <a href="#download" class="btn btn--primary header-cta__btn smoothscroll">Get The App</a>
+                </div>
+            </nav> <!-- end header-nav-wrap -->
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header> <!-- end header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    Guess the Cloud, from the Image.
+                    </h1>
+    
+                    <h3>
+                    Using our in-house custom designed AI model, we identify the type of cloud you're looking at through your phone's camera.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
+                            Get The App
+                        </a>
+                    </div>
+                </div> <!-- end home-content__left-->
+
+                <div class="home-content__right">
+                    <img src="images/appImage_800.png" srcset="images/appImage_800.png 1x, images/appImage_800.png 2x">
+                </div> <!-- end home-content__right -->
+
+            </div> <!-- end home-content__main -->
+
+            <ul class="home-content__social">
+                <li><a href="https://github.com/MeghaApps">GitHub</a></li>
+            </ul>
+
+        </div> <!-- end home-content -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll</span>
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about-how">
+        <br><br><br>
+        <div class="row process-wrap">
+
+            <h2 class="display-2 text-center" data-aos="fade-up">How Does It Work?</h2>
+
+            <div class="process" data-aos="fade-up">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Install the App</h3>
+                        <p>First, get the app from the Play Store / App Store, install it on your device.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Take a Picture</h3>
+                        <p>Next, tap on the image box to capture a picture, using your phone's camera.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Run the image through the ML model</h3>
+                        <p>The picture clicked gets processed through the TFLite CNN model, and prints out it's prediction along with a confidence score.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Learn about the Clouds</h3>
+                        <p>Press the button below to see information on the different types of clouds and what each cloud type signifies.
+                        </p> 
+                    </div>  
+
+                </div> <!-- end process__steps -->
+           </div> <!-- end process -->
+        </div> <!-- end about-how -->
+    </section> <!-- end s-about -->
+
+    <!-- features
+    ================================================== -->
+    <section id="features" class="s-features target-section">
+        <div class="row section-header has-bottom-sep">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Meet the Team.
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row features block-3-1">
+
+            <div class="testimonials__slide">
+                <img src="images/avatars/karthi.jpeg" alt="Author image" class="testimonials__avatar">
+                
+                <p>
+                    Being an iOS developer, Karthi built the iOS version of this app in Swift, integrating the TFLite model. He also designed the UI for this app in Adobe XD. He is a final year student at SASTRA Deemed to be University pursuing a Bachelor's Degree in Computer Science and Engineering.
+                </p>
+
+                <div class="testimonials__author">
+                    <span class="testimonials__name">Karthikeyan K</span>
+                    <a href="https://github.com/karthikeyan2000" class="testimonials__link">@karthikeyan2000</a>
+                </div>
+            </div> 
+
+            <br><br><br>
+
+            <div class="testimonials__slide">
+                <img src="images/avatars/naimish.jpeg" alt="Author image" class="testimonials__avatar">
+                
+                <p>Naimish designed the CNN model that powers the app's predictions, and exported the model to TFLite for app integrations. He also worked on the landing page for the app. He is a final year student at SASTRA Deemed to be University pursuing a Bachleor's Degree in Mechanical Engineering.</p>
+
+                <div class="testimonials__author">
+                    <span class="testimonials__name">Naimish Mani B</span>
+                    <a href="https://github.com/Naimish240" class="testimonials__link">@naimish240</a>
+                </div>
+            </div> <!-- end testimonials__slide -->
+
+            <br><br><br>
+
+
+            <div class="testimonials__slide">
+                <img src="images/avatars/ram.jpeg" alt="Author image" class="testimonials__avatar">
+                
+                <p>Ram Narayan built the Android version of the app in Kotlin and integrated the TFLite model into it for predictions. He is a final year student at SASTRA Deemed to be University pursuing a Bachelor's Degree in Computer Science and Engineering.</p>
+
+                <div class="testimonials__author">
+                    <span class="testimonials__name">Ram Narayan</span>
+                    <a href="https://github.com/RamNarayan27" class="testimonials__link">@ramnarayan27</a>
+                </div>
+            </div> <!-- end testimonials__slide -->
+
+        </div> <!-- end features -->
+
+    </section> <!-- end s-features -->
+
+    <!-- download
+    ================================================== -->
+    <section id="download" class="s-download target-section">
+
+        <div class="row section-header align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Try it Out!
+                </h1>
+                <p class="lead">
+                    Download the app, from the Google Play Store or Apple App Store!
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+        <br>
+        <div class="row">
+            <div class="col-full text-center">
+                <ul class="download-badges">
+                    <li><a href="#0" title="" class="badge-appstore">App Store</a></li>
+                    <li><a href="#0" title="" class="badge-googleplay">Play Store</a></li>
+                </ul>
+            </div> 
+        </div>
+        <br><br>
+    </section> <!-- end s-download -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>About Megha.</h4>
+
+                <p>
+                The word "Megha" is derived from the Sanskrit word "Megh", which means "Cloud".
+                We trained a CNN model on a dataset of 2.5k images spread across 11 cloud types,
+                to predict the type of clouds visible in a given image.  
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="https://github.com/MeghaApps"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-five md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-five mob-full">
+                        <h4>Site links.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="#home" class="smoothscroll">Home</a></li>
+                            <li><a href="#about" class="smoothscroll">About</a></li>
+                            <li><a href="#features" class="smoothscroll">Team</a></li>
+                            <li><a href="#download" class="smoothscroll">Download</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-seven mob-full">
+                        <h4>Contact Us.</h4>
+                        <p>
+                        Need help or have a question? Contact us at: <br>
+                        <a href="" class="footer__mail-link">https://github.com/MeghaApps</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright">
+                <span>&copy; Copyright Megha 2021</span> 
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
